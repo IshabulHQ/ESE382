@@ -1,0 +1,404 @@
+# Mon May 11 12:55:48 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: C:\lscc\diamond\3.11_x64\synpbase
+OS: Windows 6.2
+
+Hostname: ISHABULHAQU7CFE
+
+Implementation : impl1
+Synopsys Lattice Technology Mapper, Version maplat2018q2p1, Build 055R, Built Apr  3 2019 09:51:54
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    -0.50ns		  16 /         7
+   2		0h:00m:00s		    -0.50ns		  16 /         7
+   3		0h:00m:00s		     0.01ns		  16 /         7
+
+   4		0h:00m:01s		    -0.04ns		  16 /         7
+   5		0h:00m:01s		     0.00ns		  16 /         7
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 141MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 141MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 106MB peak: 141MB)
+
+Writing Analyst data base \\Mac\Home\Desktop\ESE382\lab9\impl1\synwork\impl1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 138MB peak: 141MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: \\Mac\Home\Desktop\ESE382\lab9\impl1\impl1.edi
+N-2018.03L-SP1-1
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 143MB peak: 145MB)
+
+Writing VHDL Simulation files
+
+Finished Writing VHDL Simulation files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 143MB peak: 145MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 144MB peak: 145MB)
+
+@W: MT420 |Found inferred clock SPI_test_system_I|clk with period 3.22ns. Please declare a user-defined clock on port clk.
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Mon May 11 12:55:53 2020
+#
+
+
+Top view:               SPI_test_system_I
+Requested Frequency:    310.9 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -0.568
+
+                          Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock            Frequency     Frequency     Period        Period        Slack      Type         Group                
+-------------------------------------------------------------------------------------------------------------------------------
+SPI_test_system_I|clk     310.9 MHz     264.3 MHz     3.216         3.784         -0.568     inferred     Autoconstr_clkgroup_0
+===============================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                        |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------------------------
+Starting               Ending                 |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------------------------
+SPI_test_system_I|clk  SPI_test_system_I|clk  |  3.217       -0.568  |  No paths    -      |  No paths    -      |  No paths    -    
+=====================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: SPI_test_system_I|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                        Starting                                                           Arrival           
+Instance                Reference                 Type        Pin     Net                  Time        Slack 
+                        Clock                                                                                
+-------------------------------------------------------------------------------------------------------------
+u1.bit_addr[1]          SPI_test_system_I|clk     FD1S3BX     Q       bit_addr[1]          1.392       -0.568
+u1.present_state[1]     SPI_test_system_I|clk     FD1S3DX     Q       present_state[1]     1.392       -0.568
+u1.bit_addr[0]          SPI_test_system_I|clk     FD1S3BX     Q       bit_addr[0]          1.382       -0.558
+u0.present_state[1]     SPI_test_system_I|clk     FD1S3DX     Q       temp_send_en         1.292       -0.468
+u1.bit_addr[2]          SPI_test_system_I|clk     FD1S3BX     Q       bit_addr[2]          1.432       0.382 
+u1.present_state[0]     SPI_test_system_I|clk     FD1S3DX     Q       present_state[0]     1.412       0.402 
+u0.present_state[0]     SPI_test_system_I|clk     FD1S3DX     Q       present_state[0]     1.212       0.602 
+=============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                        Starting                                                              Required           
+Instance                Reference                 Type        Pin     Net                     Time         Slack 
+                        Clock                                                                                    
+-----------------------------------------------------------------------------------------------------------------
+u1.present_state[0]     SPI_test_system_I|clk     FD1S3DX     D       N_18_i                  2.384        -0.568
+u1.bit_addr[0]          SPI_test_system_I|clk     FD1S3BX     D       N_1_i                   2.384        0.382 
+u1.bit_addr[1]          SPI_test_system_I|clk     FD1S3BX     D       N_3_i                   2.384        0.382 
+u1.bit_addr[2]          SPI_test_system_I|clk     FD1S3BX     D       N_2_i                   2.384        0.382 
+u1.present_state[1]     SPI_test_system_I|clk     FD1S3DX     D       present_state_ns[1]     2.384        0.402 
+u0.present_state[0]     SPI_test_system_I|clk     FD1S3DX     D       present_state_ns[0]     2.384        0.522 
+u0.present_state[1]     SPI_test_system_I|clk     FD1S3DX     D       N_13_i                  2.384        0.602 
+=================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      3.216
+    - Setup time:                            0.833
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         2.384
+
+    - Propagation time:                      2.952
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.568
+
+    Number of logic level(s):                2
+    Starting point:                          u1.bit_addr[1] / Q
+    Ending point:                            u1.present_state[0] / D
+    The start point is clocked by            SPI_test_system_I|clk [rising] on pin CK
+    The end   point is clocked by            SPI_test_system_I|clk [rising] on pin CK
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+u1.bit_addr[1]                FD1S3BX      Q        Out     1.392     1.392       -         
+bit_addr[1]                   Net          -        -       -         -           6         
+u1.present_state_RNO_0[0]     ORCALUT4     C        In      0.000     1.392       -         
+u1.present_state_RNO_0[0]     ORCALUT4     Z        Out     0.990     2.381       -         
+N_4_i_1                       Net          -        -       -         -           1         
+u1.present_state_RNO[0]       ORCALUT4     A        In      0.000     2.381       -         
+u1.present_state_RNO[0]       ORCALUT4     Z        Out     0.570     2.952       -         
+N_18_i                        Net          -        -       -         -           1         
+u1.present_state[0]           FD1S3DX      D        In      0.000     2.952       -         
+============================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      3.216
+    - Setup time:                            0.833
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         2.384
+
+    - Propagation time:                      2.952
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.568
+
+    Number of logic level(s):                2
+    Starting point:                          u1.present_state[1] / Q
+    Ending point:                            u1.present_state[0] / D
+    The start point is clocked by            SPI_test_system_I|clk [rising] on pin CK
+    The end   point is clocked by            SPI_test_system_I|clk [rising] on pin CK
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+u1.present_state[1]           FD1S3DX      Q        Out     1.392     1.392       -         
+present_state[1]              Net          -        -       -         -           6         
+u1.present_state_RNO_0[0]     ORCALUT4     D        In      0.000     1.392       -         
+u1.present_state_RNO_0[0]     ORCALUT4     Z        Out     0.990     2.381       -         
+N_4_i_1                       Net          -        -       -         -           1         
+u1.present_state_RNO[0]       ORCALUT4     A        In      0.000     2.381       -         
+u1.present_state_RNO[0]       ORCALUT4     Z        Out     0.570     2.952       -         
+N_18_i                        Net          -        -       -         -           1         
+u1.present_state[0]           FD1S3DX      D        In      0.000     2.952       -         
+============================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      3.216
+    - Setup time:                            0.833
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         2.384
+
+    - Propagation time:                      2.942
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.558
+
+    Number of logic level(s):                2
+    Starting point:                          u1.bit_addr[0] / Q
+    Ending point:                            u1.present_state[0] / D
+    The start point is clocked by            SPI_test_system_I|clk [rising] on pin CK
+    The end   point is clocked by            SPI_test_system_I|clk [rising] on pin CK
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+u1.bit_addr[0]                FD1S3BX      Q        Out     1.382     1.382       -         
+bit_addr[0]                   Net          -        -       -         -           5         
+u1.present_state_RNO_0[0]     ORCALUT4     B        In      0.000     1.382       -         
+u1.present_state_RNO_0[0]     ORCALUT4     Z        Out     0.990     2.371       -         
+N_4_i_1                       Net          -        -       -         -           1         
+u1.present_state_RNO[0]       ORCALUT4     A        In      0.000     2.371       -         
+u1.present_state_RNO[0]       ORCALUT4     Z        Out     0.570     2.942       -         
+N_18_i                        Net          -        -       -         -           1         
+u1.present_state[0]           FD1S3DX      D        In      0.000     2.942       -         
+============================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      3.216
+    - Setup time:                            0.833
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         2.384
+
+    - Propagation time:                      2.852
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.468
+
+    Number of logic level(s):                2
+    Starting point:                          u0.present_state[1] / Q
+    Ending point:                            u1.present_state[0] / D
+    The start point is clocked by            SPI_test_system_I|clk [rising] on pin CK
+    The end   point is clocked by            SPI_test_system_I|clk [rising] on pin CK
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+u0.present_state[1]           FD1S3DX      Q        Out     1.292     1.292       -         
+temp_send_en                  Net          -        -       -         -           3         
+u1.present_state_RNO_0[0]     ORCALUT4     A        In      0.000     1.292       -         
+u1.present_state_RNO_0[0]     ORCALUT4     Z        Out     0.990     2.281       -         
+N_4_i_1                       Net          -        -       -         -           1         
+u1.present_state_RNO[0]       ORCALUT4     A        In      0.000     2.281       -         
+u1.present_state_RNO[0]       ORCALUT4     Z        Out     0.570     2.852       -         
+N_18_i                        Net          -        -       -         -           1         
+u1.present_state[0]           FD1S3DX      D        In      0.000     2.852       -         
+============================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      3.216
+    - Setup time:                            0.833
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         2.384
+
+    - Propagation time:                      2.002
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.382
+
+    Number of logic level(s):                1
+    Starting point:                          u1.bit_addr[2] / Q
+    Ending point:                            u1.bit_addr[0] / D
+    The start point is clocked by            SPI_test_system_I|clk [rising] on pin CK
+    The end   point is clocked by            SPI_test_system_I|clk [rising] on pin CK
+
+Instance / Net                      Pin      Pin               Arrival     No. of    
+Name                   Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------
+u1.bit_addr[2]         FD1S3BX      Q        Out     1.432     1.432       -         
+bit_addr[2]            Net          -        -       -         -           8         
+u1.bit_addr_RNO[0]     ORCALUT4     C        In      0.000     1.432       -         
+u1.bit_addr_RNO[0]     ORCALUT4     Z        Out     0.570     2.002       -         
+N_1_i                  Net          -        -       -         -           1         
+u1.bit_addr[0]         FD1S3BX      D        In      0.000     2.002       -         
+=====================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 144MB peak: 145MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 144MB peak: 145MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lfxp3c-4
+
+Register bits: 7 of 3072 (0%)
+PIC Latch:       0
+I/O cells:       15
+
+
+Details:
+FD1S3BX:        3
+FD1S3DX:        4
+GSR:            1
+IB:             12
+INV:            1
+L6MUX21:        1
+OB:             3
+ORCALUT4:       15
+PFUMX:          2
+PUR:            1
+VHI:            3
+VLO:            3
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 31MB peak: 145MB)
+
+Process took 0h:00m:04s realtime, 0h:00m:02s cputime
+# Mon May 11 12:55:53 2020
+
+###########################################################]

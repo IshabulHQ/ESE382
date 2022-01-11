@@ -1,0 +1,6 @@
+#Start recording tcl command: 4/28/2020 17:51:31
+#Project Location: //Mac/Home/Desktop/ESE382/Lab 8/Lattice; Project name: l
+prj_project new -name "l" -impl "impl1" -dev LFXP3C-4T100C -synthesis "synplify"
+prj_src add "//Mac/Home/Desktop/ESE382/Lab 8/Lattice/SPI_test_system_I_tb.vhd"
+prj_project save
+#Stop recording: 4/28/2020 17:51:41

@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.11_x64\synpbase\bin64\syn_nfilter.exe  -link  -multisrs  \\Mac\Home\Desktop\ESE382\lab9\impl1\synwork\impl1_comp.srs  -osyn  \\Mac\Home\Desktop\ESE382\lab9\impl1\synwork\impl1_mult.srs  -log  \\Mac\Home\Desktop\ESE382\lab9\impl1\synlog\impl1_multi_srs_gen.srr 
+relcom:C:\lscc\diamond\3.11_x64\synpbase\bin64\syn_nfilter.exe -link -multisrs ..\synwork\impl1_comp.srs -osyn ..\synwork\impl1_mult.srs -log ..\synlog\impl1_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\impl1_comp.srs|io:i|time:1589216144|size:4812|exec:0|csum:5BAE3C8CF98B50308A5200CE2F38464A
+file:..\synwork\impl1_mult.srs|io:o|time:1589216146|size:2785|exec:0|csum:
+file:..\synlog\impl1_multi_srs_gen.srr|io:o|time:1589216146|size:1341|exec:0|csum:
+file:C:\lscc\diamond\3.11_x64\synpbase\bin64\syn_nfilter.exe|io:i|time:1554124952|size:8734720|exec:1|csum:0A206A5298321BBDD627E7975EAE3EC2

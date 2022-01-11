@@ -1,0 +1,74 @@
+Running in Lattice mode
+
+Starting:    C:\lscc\diamond\3.11_x64\synpbase\bin64\mbin\synplify.exe
+Install:     C:\lscc\diamond\3.11_x64\synpbase
+Hostname:    ISHABULHAQU7CFE
+Date:        Tue Apr 28 17:47:59 2020
+Version:     N-2018.03L-SP1-1
+
+Arguments:   -product synplify_pro -tcl //Mac/Home/Desktop/ESE382/Lab 8/Lattice/impl1/launch_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+
+No project opened.
+auto_infer_blackbox is not supported in current product.
+Removed file: C:\lscc\diamond\3.11_x64\cae_library\synthesis\vhdl\xp.vhd
+Removed file: C:\My_Designs\Lab 8\lab8\task1\src\task3_tb.vhd
+Removed file: C:\My_Designs\Lab 8\lab8\task1\src\send_pos_edge_det.vhd
+Removed file: C:\My_Designs\Lab 8\lab8\task1\src\SPI_test_system_I.vhd
+Removed file: C:\My_Designs\Lab 8\lab8\task1\src\spi_tx_shifter.vhd
+TCL script complete: "//Mac/Home/Desktop/ESE382/Lab 8/Lattice/impl1/launch_synplify.tcl"
+log file: "\\Mac\Home\Desktop\ESE382\Lab 8\Lattice\impl1\impl1.srr"
+Running: impl1 in foreground
+
+Running impl1_syn|impl1
+
+Running Flow: compile (Compile) on impl1_syn|impl1
+# Tue Apr 28 17:48:12 2020
+
+Running Flow: compile_flow (Compile Process) on impl1_syn|impl1
+# Tue Apr 28 17:48:12 2020
+
+Running: compiler (Compile Input) on impl1_syn|impl1
+# Tue Apr 28 17:48:12 2020
+Job failed on: impl1_syn|impl1
+
+Job: "compiler" terminated with error status: 2
+See log file: "\\Mac\Home\Desktop\ESE382\Lab 8\Lattice\impl1\synlog\impl1_compiler.srr"
+# Tue Apr 28 17:48:12 2020
+
+Return Code: 2
+Run Time:00h:00m:00s
+Complete: Compile Process on impl1_syn|impl1
+Complete: Compile on impl1_syn|impl1
+Complete: Logic Synthesis on impl1_syn|impl1
+2Opening object source file \\mac\home\desktop\ese382\lab 8\lattice\impl1\synlog\impl1_compiler.srr
+auto_infer_blackbox is not supported in current product.
+Copied \\Mac\Home\Desktop\ESE382\Lab 8\Lattice\impl1\impl1.srr to \\Mac\Home\Desktop\ESE382\Lab 8\Lattice\impl1\backup\impl1.srr
+log file: "\\Mac\Home\Desktop\ESE382\Lab 8\Lattice\impl1\impl1.srr"
+Running: impl1 in foreground
+
+Running impl1_syn|impl1
+
+Running Flow: compile (Compile) on impl1_syn|impl1
+# Tue Apr 28 17:49:03 2020
+
+Running Flow: compile_flow (Compile Process) on impl1_syn|impl1
+# Tue Apr 28 17:49:03 2020
+
+Running: compiler (Compile Input) on impl1_syn|impl1
+# Tue Apr 28 17:49:03 2020
+Job failed on: impl1_syn|impl1
+
+Job: "compiler" terminated with error status: 2
+See log file: "\\Mac\Home\Desktop\ESE382\Lab 8\Lattice\impl1\synlog\impl1_compiler.srr"
+# Tue Apr 28 17:49:07 2020
+
+Return Code: 2
+Run Time:00h:00m:04s
+Complete: Compile Process on impl1_syn|impl1
+Complete: Compile on impl1_syn|impl1
+Complete: Logic Synthesis on impl1_syn|impl1

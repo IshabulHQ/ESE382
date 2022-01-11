@@ -1,0 +1,32 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Waveform file 'F:/Spring 2020/ESE382/Lab 4/New Lab 4/gray_to_binary_2/gray_bin_table_lookup_dc/src/task4.awc' connected to 'F:/Spring 2020/ESE382/Lab 4/New Lab 4/gray_to_binary_2/gray_bin_table_lookup_dc/src/task4.asdb'.
+acom -dbg -e 100 -work gray_bin_table_lookup_dc -2008  $dsn/src/gray_bin_table_lookup_dc.vhd $dsn/src/gray_bin_selfcheck_TB(3).vhd
+# File: F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_table_lookup_dc\src\gray_bin_table_lookup_dc.vhd
+# Compile Entity "gray_bin"
+# Compile Architecture "table_lookup_dc" of Entity "gray_bin"
+# File: F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_table_lookup_dc\src\gray_bin_selfcheck_TB(3).vhd
+# Compile Entity "gray_bin_selfcheck_tb"
+# Compile Architecture "tb_architecture" of Entity "gray_bin_selfcheck_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -dbg -e 100 -work gray_bin_table_lookup_dc -2008  $dsn/src/gray_bin_table_lookup_dc.vhd $dsn/src/gray_bin_selfcheck_TB(3).vhd
+# File: F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_table_lookup_dc\src\gray_bin_table_lookup_dc.vhd
+# Compile Entity "gray_bin"
+# Compile Architecture "table_lookup_dc" of Entity "gray_bin"
+# File: F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_table_lookup_dc\src\gray_bin_selfcheck_TB(3).vhd
+# Compile Entity "gray_bin_selfcheck_tb"
+# Compile Architecture "tb_architecture" of Entity "gray_bin_selfcheck_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  93.0 [ms]
+acom -reorder -dbg -e 100 -work gray_bin_table_lookup_dc -2008  $dsn/src/gray_bin_table_lookup_dc.vhd $dsn/src/gray_bin_selfcheck_TB(3).vhd
+# File: F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_table_lookup_dc\src\gray_bin_table_lookup_dc.vhd
+# Compile Entity "gray_bin"
+# Compile Architecture "table_lookup_dc" of Entity "gray_bin"
+# File: F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_table_lookup_dc\src\gray_bin_selfcheck_TB(3).vhd
+# Compile Entity "gray_bin_selfcheck_tb"
+# Compile Architecture "tb_architecture" of Entity "gray_bin_selfcheck_tb"
+# Top-level unit(s) detected:
+# Entity => gray_bin_selfcheck_tb
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# Design: Design "gray_bin_conditional_dc" has been set as active.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].

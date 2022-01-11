@@ -1,0 +1,6 @@
+Laboratory 09: SPI Transmitter and Receiver
+Objective: Functionality of the SPI master has a DORD input  added. This input selects whether the serial byte is transmitted most significant bit first or least significant bit first. A MISO input is also added. This input receives serial data sent from the slave to the master. The byte received is output at data_out.
+
+Task 1: Data Order Selection and Receiver Enable
+Task 2: SPI Receive Shifter
+Task 3: SPI Test System II Top Level

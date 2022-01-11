@@ -1,0 +1,16 @@
+JED2VHDL  JEDEC to IEEE1076 VHDL Model Builder
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+
+*** Signal Name Conversion ***
+PIN 2 -- signal: 'g_3_' is converted to: 'g(3)'. 
+PIN 3 -- signal: 'g_2_' is converted to: 'g(2)'. 
+PIN 4 -- signal: 'g_1_' is converted to: 'g(1)'. 
+PIN 5 -- signal: 'g_0_' is converted to: 'g(0)'. 
+PIN 23 -- signal: 'b_0_' is converted to: 'b(0)'. 
+PIN 24 -- signal: 'b_1_' is converted to: 'b(1)'. 
+PIN 25 -- signal: 'b_2_' is converted to: 'b(2)'. 
+PIN 26 -- signal: 'b_3_' is converted to: 'b(3)'. 

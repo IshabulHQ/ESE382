@@ -1,0 +1,10 @@
+JDF B
+// Created by Version 2.0 
+PROJECT Untitled
+DESIGN untitled Normal
+DEVKIT GAL22LV10C-10LJ
+ENTRY EDIF
+MODULE proj_1.edf
+MODSTYLE gray_bin Normal
+SYNTHESIS_TOOL Synplify
+TOPMODULE gray_bin

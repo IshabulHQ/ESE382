@@ -1,0 +1,24 @@
+timestamp=1582745586496
+
+[~A]
+ModifyID=6
+Version=74
+
+[gray_bin]
+A/conditional_dc=+21|./../src/gray_bin_conditional_dc.vhd|49|1*2083
+A/table_lookup_dc=+21|./../src/gray_bin.vhd|43|1*758
+I=0*5327
+M=11|0|ve1|1582745586442|../src/gray_bin.vhd|0*4888*0x9e89f6aad13d96411816d227c0fcdbcabe44a4ad|0*5246*0xd986fd7175c8cf28cd774bcadde79966
+M/conditional_dc=21|0|vde|1582711765027|./../src/gray_bin_conditional_dc.vhd|0*3405*0xec111559263bb099cfc9589d2526fd80e7f2a98f|0*3937*0x20116f55b147878295aeff36dce7fc50
+M/table_lookup_dc=21|0|vde|1582711342857|./../src/gray_bin.vhd|0*1303*0xe92c816edd8eaf7fd8914b9cf3f399fed7cb1373|0*1823*0x20116f55b147878295aeff36dce7fc50
+R=../src/gray_bin.vhd|29
+Version=10.5a.12.6914 (Windows)|00000009789cd3f53756d0353230b00000090c01c7|33bc1f0135cdc64f35ce65aa6199de18257a08b95c9a80cfdbb2c82194e4e6f0d03083208da23a79e0d508352fae7b6d
+Version/conditional_dc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|7c9e8f1af1dad4dd8181d0aa90fd0e306f3231059006901714a5ba7a7398b8cbe40dc87f2650ecac01a510498f8dcc41
+Version/table_lookup_dc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|9f3bc94c18391d04edd373fd3af054122890f78b4cd849f16beea35e7d48f0f934f3d4acc42a6802f1d4fe503bd6c00a
+
+[~MFT]
+0=8|0gray_bin_table_lookup_dc.mgf|5327|3420
+1=0|1gray_bin_table_lookup_dc.mgf|2083|758
+
+[~U]
+gray_bin=11|0*4690|

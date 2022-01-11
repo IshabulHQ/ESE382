@@ -1,0 +1,16 @@
+rst_bar  i
+clk  i
+send  i
+cpol  i
+cpha  i
+data_in[7]  i
+data_in[6]  i
+data_in[5]  i
+data_in[4]  i
+data_in[3]  i
+data_in[2]  i
+data_in[1]  i
+data_in[0]  i
+mosi  o
+sck  o
+ss_bar  o

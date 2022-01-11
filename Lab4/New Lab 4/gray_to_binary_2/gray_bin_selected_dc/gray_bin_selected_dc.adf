@@ -1,0 +1,68 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=gray_bin_selected_dc
+
+[Library]
+gray_bin_selected_dc=.\gray_bin_selected_dc\gray_bin_selected_dc.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FLOWTOOLS=NONE
+REFRESH_FLOW=1
+FAMILY=
+fileopenfolder=F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin\src
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=1
+
+[$LibMap$]
+gray_bin_selected_dc=.
+Active_lib=
+
+[Files]
+/gray_bin.vhd=-1
+/gray_bin_selfcheck_TB(3).vhd=-1
+
+[Files.Data]
+.\src\gray_bin.vhd=VHDL Source Code
+.\src\gray_bin_selfcheck_TB(3).vhd=VHDL Source Code
+
+[Folders]
+Name3=Makefiles
+Directory3=F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_selected_dc\
+Extension3=mak
+Name4=Memory
+Directory4=F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_selected_dc\
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_selected_dc\
+Extension5=dll
+Name6=PDF
+Directory6=F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_selected_dc\
+Extension6=pdf
+Name7=HTML
+Directory7=F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_selected_dc\
+Extension7=htm;html
+Name8=ALINT-PRO Workspaces
+Directory8=F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_selected_dc\
+Extension8=alintws
+[SpecTracer]
+WindowVisible=0

@@ -1,0 +1,8 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:"F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_conditional_dc\src\gray_bin_conditional_dc.vhd":29:7:29:14|Top entity is set to gray_bin.
+@N: CD630 :"F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_conditional_dc\src\gray_bin_conditional_dc.vhd":29:7:29:14|Synthesizing work.gray_bin.conditional_dc.
+@N|Running in 64-bit mode
+@N: NF107 :"f:\spring 2020\ese382\lab 4\new lab 4\gray_to_binary_2\gray_bin_conditional_dc\src\gray_bin_conditional_dc.vhd":29:7:29:14|Selected library: work cell: gray_bin view conditional_dc as top level
+@N: NF107 :"f:\spring 2020\ese382\lab 4\new lab 4\gray_to_binary_2\gray_bin_conditional_dc\src\gray_bin_conditional_dc.vhd":29:7:29:14|Selected library: work cell: gray_bin view conditional_dc as top level
+

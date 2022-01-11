@@ -1,0 +1,46 @@
+timestamp=1582712298903
+
+[~A]
+ModifyID=19
+Version=74
+
+[converter_bcd_2421]
+BinI32/conditional=3*0
+I=0*1620
+I/conditional=0*3022
+M=11|0|vde|1582699256201|./../src/conditional.vhd|0*1061*0x13d1c41518c5ecb93d9b33210afc9f7ed4f9dd0d|0*1524*0x23b75c12e3e89f2ef000564498faa8c2
+R=./../src/conditional.vhd|6
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|5a6f3120d95703e30ea138ebc018152f5cb20f3d2476b522a9ad372e06940f1fa2e40603c72797bb677d9707aa09ae63
+Version/conditional=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|9303cd77c98d53f8e060360e91980f52965a19cb1313554c11750f7fc860c079595c99b03e20a9e7cfa30f906bf80d2f
+
+[gray_bin]
+A/conditional_dc=21|./../src/gray_bin_conditional_dc.vhd|50|1*20706
+BinI32/conditional_dc=3*5368
+I=0*13613
+I/conditional_dc=0*15065
+M=11|0|vde|1582711996673|./../src/gray_bin_conditional_dc.vhd|0*13144*0xd361b511613ca5aa98d96f4d05fdbbbe6d696651|0*13515*0x23b75c12e3e89f2ef000564498faa8c2
+M/conditional_dc=21|0|vde|1582712298859|./../src/gray_bin_conditional_dc.vhd|0*13854*0xb6a3e159750f575412be561d3ce4208b1c590b44|0*14386*0x20116f55b147878295aeff36dce7fc50
+R=./../src/gray_bin_conditional_dc.vhd|35
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|33bc1f0135cdc64f35ce65aa6199de18257a08b95c9a80cfdbb2c82194e4e6f0a2c2d5747fc2b4ca70e7cca7927e6730
+Version/conditional_dc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|7c9e8f1af1dad4dd8181d0aa90fd0e306f3231059006901714a5ba7a7398b8cbd56d556ac5543dd4fb01c718e072dc9b
+
+[gray_bin_selfcheck_tb]
+A/tb_architecture=21|./../src/gray_bin_selfcheck_TB(3).vhd|11|1*19263
+BinI32/tb_architecture=3*4713
+I=0*4615
+I/tb_architecture=0*14758
+M=11|0|vde|1582708955081|./../src/gray_bin_selfcheck_TB(3).vhd|0*4259*0x4c2f1484bfd10d57373d82390e280de649fedfc0|0*4503*0x23b75c12e3e89f2ef000564498faa8c2
+M/tb_architecture=21|0|vde|1582712029963|./../src/gray_bin_selfcheck_TB(3).vhd|0*11835*0xf235199e7554a98fc0dd55ad929b89444ade02b0|0*12507*0x20116f55b147878295aeff36dce7fc50
+R=./../src/gray_bin_selfcheck_TB(3).vhd|8
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|11db9a309674361cf008c5a1dde47466c5639a0a2614d8f061fafcbefa90d51045e370458f2287b5aa5ff981b4cecb00
+Version/tb_architecture=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534beab59c9d28dd2c62b86592800e601f2641
+
+[~MFT]
+0=2|0gray_bin_selected.mgf|15065|10428
+1=2|1gray_bin_selected.mgf|20706|19263
+3=2|3gray_bin_selected.mgf|5368|3911
+
+[~U]
+converter_bcd_2421=11|0*843|
+gray_bin=11|0*12946|
+gray_bin_selfcheck_tb=11|0*4111|

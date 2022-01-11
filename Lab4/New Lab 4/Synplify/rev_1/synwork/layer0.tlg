@@ -1,0 +1,9 @@
+@N: CD630 :"F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_conditional_dc\src\gray_bin_conditional_dc.vhd":29:7:29:14|Synthesizing work.gray_bin.conditional_dc.
+Post processing for work.gray_bin.conditional_dc
+Running optimization stage 1 on gray_bin .......
+Running optimization stage 2 on gray_bin .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: F:\Spring 2020\ESE382\Lab 4\New Lab 4\Synplify\rev_1\synwork\layer0.rt.csv
+

@@ -1,0 +1,4 @@
+6
+~E 1 "../src/gray_bin.vhd" 29 gray_bin
+~A 1 "./../src/gray_bin_conditional_dc.vhd" 49 conditional_dc
+~A 1 "./../src/gray_bin.vhd" 43 table_lookup_dc

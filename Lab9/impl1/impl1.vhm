@@ -1,0 +1,434 @@
+--
+-- Written by Synopsys
+-- Product Version "N-2018.03L-SP1-1"
+-- Program "Synplify Pro", Mapper "maplat2018q2p1, Build 055R"
+-- Mon May 11 12:55:52 2020
+--
+
+--
+-- Written by Synplify Pro version Build 055R
+-- Mon May 11 12:55:52 2020
+--
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+library pmi;
+use pmi.pmi_components.all;
+library xp;
+use xp.components.all;
+
+entity spi_tx_shifter is
+port(
+  data_in_c : in std_logic_vector(7 downto 0);
+  ss_bar_c :  out std_logic;
+  sck_c :  out std_logic;
+  cpol_c :  in std_logic;
+  temp_send_en :  in std_logic;
+  mosi_c :  out std_logic;
+  rst_bar_c_i :  in std_logic;
+  clk_c :  in std_logic;
+  rst_bar_c :  in std_logic);
+end spi_tx_shifter;
+
+architecture beh of spi_tx_shifter is
+  signal PRESENT_STATE : std_logic_vector(1 downto 0);
+  signal PRESENT_STATE_QN : std_logic_vector(1 downto 0);
+  signal PRESENT_STATE_NS : std_logic_vector(1 to 1);
+  signal BIT_ADDR : std_logic_vector(2 downto 0);
+  signal BIT_ADDR_QN : std_logic_vector(2 downto 0);
+  signal GND : std_logic ;
+  signal UN3_RST_BAR : std_logic ;
+  signal N_18_I : std_logic ;
+  signal VCC : std_logic ;
+  signal N_1_I : std_logic ;
+  signal N_3_I : std_logic ;
+  signal N_2_I : std_logic ;
+  signal N_9 : std_logic ;
+  signal N_6 : std_logic ;
+  signal TXD_6_AM : std_logic ;
+  signal TXD_6_BM : std_logic ;
+  signal TXD_3_AM : std_logic ;
+  signal TXD_3_BM : std_logic ;
+  signal N_4_I_1 : std_logic ;
+  signal N_3 : std_logic ;
+  signal N_2 : std_logic ;
+  signal N_1 : std_logic ;
+begin
+\PRESENT_STATE_RNISBLO[1]\: ORCALUT4 
+generic map(
+  init => X"5757"
+)
+port map (
+  A => rst_bar_c,
+  B => PRESENT_STATE(1),
+  C => PRESENT_STATE(0),
+  D => GND,
+  Z => UN3_RST_BAR);
+\PRESENT_STATE[0]_REG_Z52\: FD1S3DX port map (
+    D => N_18_I,
+    CK => clk_c,
+    CD => rst_bar_c_i,
+    Q => PRESENT_STATE(0));
+\PRESENT_STATE[1]_REG_Z54\: FD1S3DX port map (
+    D => PRESENT_STATE_NS(1),
+    CK => clk_c,
+    CD => rst_bar_c_i,
+    Q => PRESENT_STATE(1));
+\BIT_ADDR[0]_REG_Z56\: FD1S3BX port map (
+    D => N_1_I,
+    CK => clk_c,
+    PD => UN3_RST_BAR,
+    Q => BIT_ADDR(0));
+\BIT_ADDR[1]_REG_Z58\: FD1S3BX port map (
+    D => N_3_I,
+    CK => clk_c,
+    PD => UN3_RST_BAR,
+    Q => BIT_ADDR(1));
+\BIT_ADDR[2]_REG_Z60\: FD1S3BX port map (
+    D => N_2_I,
+    CK => clk_c,
+    PD => UN3_RST_BAR,
+    Q => BIT_ADDR(2));
+TXD_7: L6MUX21 port map (
+    D1 => N_9,
+    D0 => N_6,
+    SD => BIT_ADDR(0),
+    Z => mosi_c);
+\BIT_ADDR_RNO[0]\: ORCALUT4 
+generic map(
+  init => X"AA54"
+)
+port map (
+  A => BIT_ADDR(0),
+  B => BIT_ADDR(1),
+  C => BIT_ADDR(2),
+  D => PRESENT_STATE(0),
+  Z => N_1_I);
+\BIT_ADDR_RNO[1]\: ORCALUT4 
+generic map(
+  init => X"CC98"
+)
+port map (
+  A => BIT_ADDR(0),
+  B => BIT_ADDR(1),
+  C => BIT_ADDR(2),
+  D => PRESENT_STATE(0),
+  Z => N_3_I);
+\BIT_ADDR_RNO[2]\: ORCALUT4 
+generic map(
+  init => X"F0E0"
+)
+port map (
+  A => BIT_ADDR(0),
+  B => BIT_ADDR(1),
+  C => BIT_ADDR(2),
+  D => PRESENT_STATE(0),
+  Z => N_2_I);
+TXD_6_AM_Z65: ORCALUT4 
+generic map(
+  init => X"CACA"
+)
+port map (
+  A => data_in_c(1),
+  B => data_in_c(5),
+  C => BIT_ADDR(2),
+  D => GND,
+  Z => TXD_6_AM);
+TXD_6_BM_Z66: ORCALUT4 
+generic map(
+  init => X"CACA"
+)
+port map (
+  A => data_in_c(3),
+  B => data_in_c(7),
+  C => BIT_ADDR(2),
+  D => GND,
+  Z => TXD_6_BM);
+TXD_6: PFUMX port map (
+    ALUT => TXD_6_BM,
+    BLUT => TXD_6_AM,
+    C0 => BIT_ADDR(1),
+    Z => N_9);
+TXD_3_AM_Z68: ORCALUT4 
+generic map(
+  init => X"CACA"
+)
+port map (
+  A => data_in_c(0),
+  B => data_in_c(4),
+  C => BIT_ADDR(2),
+  D => GND,
+  Z => TXD_3_AM);
+TXD_3_BM_Z69: ORCALUT4 
+generic map(
+  init => X"CACA"
+)
+port map (
+  A => data_in_c(2),
+  B => data_in_c(6),
+  C => BIT_ADDR(2),
+  D => GND,
+  Z => TXD_3_BM);
+TXD_3: PFUMX port map (
+    ALUT => TXD_3_BM,
+    BLUT => TXD_3_AM,
+    C0 => BIT_ADDR(1),
+    Z => N_6);
+\PRESENT_STATE_NS_I_O2[0]\: ORCALUT4 
+generic map(
+  init => X"CDCD"
+)
+port map (
+  A => temp_send_en,
+  B => PRESENT_STATE(0),
+  C => PRESENT_STATE(1),
+  D => GND,
+  Z => PRESENT_STATE_NS(1));
+SCK: ORCALUT4 
+generic map(
+  init => X"6666"
+)
+port map (
+  A => cpol_c,
+  B => PRESENT_STATE(1),
+  C => GND,
+  D => GND,
+  Z => sck_c);
+PRESENT_STATE_S0_0_A3: ORCALUT4 
+generic map(
+  init => X"1111"
+)
+port map (
+  A => PRESENT_STATE(0),
+  B => PRESENT_STATE(1),
+  C => GND,
+  D => GND,
+  Z => ss_bar_c);
+\PRESENT_STATE_RNO_0[0]\: ORCALUT4 
+generic map(
+  init => X"0355"
+)
+port map (
+  A => temp_send_en,
+  B => BIT_ADDR(0),
+  C => BIT_ADDR(1),
+  D => PRESENT_STATE(1),
+  Z => N_4_I_1);
+\PRESENT_STATE_RNO[0]\: ORCALUT4 
+generic map(
+  init => X"0D05"
+)
+port map (
+  A => N_4_I_1,
+  B => BIT_ADDR(2),
+  C => PRESENT_STATE(0),
+  D => PRESENT_STATE(1),
+  Z => N_18_I);
+II_GND: VLO port map (
+    Z => GND);
+II_VCC: VHI port map (
+    Z => VCC);
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+library pmi;
+use pmi.pmi_components.all;
+library xp;
+use xp.components.all;
+
+entity send_pos_edge_det is
+port(
+send_c :  in std_logic;
+temp_send_en :  out std_logic;
+rst_bar_c_i :  in std_logic;
+clk_c :  in std_logic);
+end send_pos_edge_det;
+
+architecture beh of send_pos_edge_det is
+signal PRESENT_STATE_NS : std_logic_vector(0 to 0);
+signal PRESENT_STATE : std_logic_vector(0 to 0);
+signal PRESENT_STATE_QN_0 : std_logic_vector(1 downto 0);
+signal VCC : std_logic ;
+signal N_13_I : std_logic ;
+signal TEMP_SEND_EN_1 : std_logic ;
+signal GND : std_logic ;
+signal N_3 : std_logic ;
+signal N_2 : std_logic ;
+signal N_1 : std_logic ;
+begin
+\PRESENT_STATE[0]_REG_Z19\: FD1S3DX port map (
+  D => PRESENT_STATE_NS(0),
+  CK => clk_c,
+  CD => rst_bar_c_i,
+  Q => PRESENT_STATE(0));
+\PRESENT_STATE[1]_REG_Z21\: FD1S3DX port map (
+  D => N_13_I,
+  CK => clk_c,
+  CD => rst_bar_c_i,
+  Q => TEMP_SEND_EN_1);
+\PRESENT_STATE_RNO[1]\: ORCALUT4 
+generic map(
+  init => X"8888"
+)
+port map (
+A => send_c,
+B => PRESENT_STATE(0),
+C => GND,
+D => GND,
+Z => N_13_I);
+\PRESENT_STATE_NS_0[0]\: ORCALUT4 
+generic map(
+  init => X"5757"
+)
+port map (
+A => send_c,
+B => TEMP_SEND_EN_1,
+C => PRESENT_STATE(0),
+D => GND,
+Z => PRESENT_STATE_NS(0));
+II_VCC: VHI port map (
+  Z => VCC);
+II_GND: VLO port map (
+  Z => GND);
+temp_send_en <= TEMP_SEND_EN_1;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+library pmi;
+use pmi.pmi_components.all;
+library xp;
+use xp.components.all;
+
+entity SPI_test_system_I is
+port(
+rst_bar :  in std_logic;
+clk :  in std_logic;
+send :  in std_logic;
+cpol :  in std_logic;
+cpha :  in std_logic;
+data_in : in std_logic_vector(7 downto 0);
+mosi :  out std_logic;
+sck :  out std_logic;
+ss_bar :  out std_logic);
+end SPI_test_system_I;
+
+architecture beh of SPI_test_system_I is
+signal DATA_IN_C : std_logic_vector(7 downto 0);
+signal TEMP_SEND_EN : std_logic ;
+signal VCC : std_logic ;
+signal GND : std_logic ;
+signal RST_BAR_C : std_logic ;
+signal CLK_C : std_logic ;
+signal SEND_C : std_logic ;
+signal CPOL_C : std_logic ;
+signal MOSI_C : std_logic ;
+signal SCK_C : std_logic ;
+signal SS_BAR_C : std_logic ;
+signal RST_BAR_C_I : std_logic ;
+component send_pos_edge_det
+port(
+  send_c :  in std_logic;
+  temp_send_en :  out std_logic;
+  rst_bar_c_i :  in std_logic;
+  clk_c :  in std_logic  );
+end component;
+component spi_tx_shifter
+port(
+  data_in_c : in std_logic_vector(7 downto 0);
+  ss_bar_c :  out std_logic;
+  sck_c :  out std_logic;
+  cpol_c :  in std_logic;
+  temp_send_en :  in std_logic;
+  mosi_c :  out std_logic;
+  rst_bar_c_i :  in std_logic;
+  clk_c :  in std_logic;
+  rst_bar_c :  in std_logic  );
+end component;
+begin
+II_VCC: VHI port map (
+Z => VCC);
+II_GND: VLO port map (
+Z => GND);
+PUR_INST: PUR port map (
+PUR => VCC);
+GSR_INST: GSR port map (
+GSR => VCC);
+RST_BAR_PAD_RNI1JBB: INV port map (
+A => RST_BAR_C,
+Z => RST_BAR_C_I);
+SS_BAR_PAD: OB port map (
+I => SS_BAR_C,
+O => ss_bar);
+SCK_PAD: OB port map (
+I => SCK_C,
+O => sck);
+MOSI_PAD: OB port map (
+I => MOSI_C,
+O => mosi);
+\DATA_IN_PAD[7]\: IB port map (
+I => data_in(7),
+O => DATA_IN_C(7));
+\DATA_IN_PAD[6]\: IB port map (
+I => data_in(6),
+O => DATA_IN_C(6));
+\DATA_IN_PAD[5]\: IB port map (
+I => data_in(5),
+O => DATA_IN_C(5));
+\DATA_IN_PAD[4]\: IB port map (
+I => data_in(4),
+O => DATA_IN_C(4));
+\DATA_IN_PAD[3]\: IB port map (
+I => data_in(3),
+O => DATA_IN_C(3));
+\DATA_IN_PAD[2]\: IB port map (
+I => data_in(2),
+O => DATA_IN_C(2));
+\DATA_IN_PAD[1]\: IB port map (
+I => data_in(1),
+O => DATA_IN_C(1));
+\DATA_IN_PAD[0]\: IB port map (
+I => data_in(0),
+O => DATA_IN_C(0));
+CPOL_PAD: IB port map (
+I => cpol,
+O => CPOL_C);
+SEND_PAD: IB port map (
+I => send,
+O => SEND_C);
+CLK_PAD: IB port map (
+I => clk,
+O => CLK_C);
+RST_BAR_PAD: IB port map (
+I => rst_bar,
+O => RST_BAR_C);
+U0: send_pos_edge_det port map (
+send_c => SEND_C,
+temp_send_en => TEMP_SEND_EN,
+rst_bar_c_i => RST_BAR_C_I,
+clk_c => CLK_C);
+U1: spi_tx_shifter port map (
+data_in_c(7 downto 0) => DATA_IN_C(7 downto 0),
+ss_bar_c => SS_BAR_C,
+sck_c => SCK_C,
+cpol_c => CPOL_C,
+temp_send_en => TEMP_SEND_EN,
+mosi_c => MOSI_C,
+rst_bar_c_i => RST_BAR_C_I,
+clk_c => CLK_C,
+rst_bar_c => RST_BAR_C);
+end beh;
+

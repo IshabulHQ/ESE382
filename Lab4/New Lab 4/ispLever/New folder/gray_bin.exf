@@ -1,0 +1,55 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      g(3:0)                        g                  3          4            -1
+      Port          2      b(3:0)                        b                  3          4            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      g_3_                        g[3]                       1            0            
+        Port      g_2_                        g[2]                       1            1            
+        Port      g_1_                        g[1]                       1            2            
+        Port      g_0_                        g[0]                       1            3            
+        Port      b_3_                        b[3]                       2            0            
+        Port      b_2_                        b[2]                       2            1            
+        Port      b_1_                        b[1]                       2            2            
+        Port      b_0_                        b[0]                       2            3            
+End
+Section Cross Reference File
+Design 'gray_bin' created Wed Feb 26 16:36:15 2020
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst                   g_0_                                      g[0]
+   Inst                   g_1_                                      g[1]
+   Inst                   g_2_                                      g[2]
+   Inst                   g_3_                                      g[3]
+   Inst                   b_0_                                      b[0]
+   Inst                   b_1_                                      b[1]
+   Inst                   b_2_                                      b[2]
+   Inst                   b_3_                                      b[3]
+   Inst            b_1_0_o2_2_                               b_1_0_o2[2]
+   Inst            b_1_i_x2_0_                               b_1_i_x2[0]
+   Inst               g_c_i_3_                                  g_c_i[3]
+   Inst          b_1_0_o2_i_2_                             b_1_0_o2_i[2]
+   Net                g_c_0__n                                    g_c[0]
+   Net                  g_0__n                                      g[0]
+   Net                g_c_1__n                                    g_c[1]
+   Net                  g_1__n                                      g[1]
+   Net                g_c_2__n                                    g_c[2]
+   Net                  g_2__n                                      g[2]
+   Net                g_c_3__n                                    g_c[3]
+   Net                  b_0__n                                      b[0]
+   Net                  b_1__n                                      b[1]
+   Net                  b_2__n                                      b[2]
+   Net              g_c_i_3__n                                  g_c_i[3]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     g_3_
+        Input     g_2_
+        Input     g_1_
+        Input     g_0_
+        Output     b_3_
+        Output     b_2_
+        Output     b_1_
+        Output     b_0_
+End

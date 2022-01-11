@@ -1,0 +1,36 @@
+timestamp=1582747912939
+
+[~A]
+ModifyID=3
+Version=74
+
+[gray_bin]
+A/selected_dc=21|../src/gray_bin.vhd|43|1*3923
+BinI32/selected_dc=3*1919
+I=0*612
+I/selected_dc=0*4071
+M=11|0|ve1|1582747526525|../src/gray_bin.vhd|0*198*0x1038a0ad2d492d8dd9c9a6fa9d0bb7cf45adeef9|0*531*0xd986fd7175c8cf28cd774bcadde79966
+M/selected_dc=21|0|ve1|1582747912865|../src/gray_bin.vhd|0*3473*0x4be5682e87648f993bb87a2f9223836304942832|0*3975*0x3666052002612506830c83371aef600f
+R=../src/gray_bin.vhd|28
+Version=10.5a.12.6914 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|33bc1f0135cdc64f35ce65aa6199de18257a08b95c9a80cfdbb2c82194e4e6f0e7b46d83e694e76335d8ed755842f906
+Version/selected_dc=10.5a.12.6914 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|1b9111aa452c254aeda042fdc036d16b1698028877997b760031efd361aee714afdace4b2eab3c43c53d68cc8fe59bd5
+
+[gray_bin_selfcheck_tb]
+A/tb_architecture=21|../src/gray_bin_selfcheck_TB(3).vhd|11|1*5148
+BinI32/tb_architecture=3*2881
+I=0*2089
+I/tb_architecture=0*4284
+M=11|0|ve1|1582747540888|../src/gray_bin_selfcheck_TB(3).vhd|0*1732*0xa52cc59ac1e61bdfeb8b5a2dff11f231fb850198|0*1979*0xd986fd7175c8cf28cd774bcadde79966
+M/tb_architecture=21|0|ve1|1582747912908|../src/gray_bin_selfcheck_TB(3).vhd|0*2342*0x134e6fb07414adda8b2356a5282a26b8b700df4a|0*3037*0x3666052002612506830c83371aef600f
+R=../src/gray_bin_selfcheck_TB(3).vhd|8
+Version=10.5a.12.6914 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|11db9a309674361cf008c5a1dde47466c5639a0a2614d8f061fafcbefa90d51026a97944ad48b6ce3c1bf34c9dcc8a99
+Version/tb_architecture=10.5a.12.6914 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534bea4b4359fa9922f3b2ade08702f1369b31
+
+[~MFT]
+0=10|0gray_bin_selected_dc.mgf|4284|1078
+1=4|1gray_bin_selected_dc.mgf|5148|3923
+3=4|3gray_bin_selected_dc.mgf|2881|1919
+
+[~U]
+gray_bin=11|0*0|
+gray_bin_selfcheck_tb=11|0*1584|

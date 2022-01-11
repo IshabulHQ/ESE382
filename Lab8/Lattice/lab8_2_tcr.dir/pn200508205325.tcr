@@ -1,0 +1,5 @@
+#Start recording tcl command: 5/8/2020 13:49:20
+#Project Location: //Mac/Home/Desktop/ESE382/Lab 8/Lattice; Project name: lab8_2
+prj_project open "//Mac/Home/Desktop/ESE382/Lab 8/Lattice/lab8_2.ldf"
+launch_synplify_prj impl1
+#Stop recording: 5/8/2020 20:53:25

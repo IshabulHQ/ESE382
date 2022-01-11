@@ -1,0 +1,37 @@
+Active-HDL 10.5a.12.6914 2020-02-26 16:44:45
+
+Elaboration top modules:
+Architecture                  tb_architecture(gray_bin_selfcheck_tb)
+
+
+-------------------------------------------------------------------------------------------------------------------------
+Entity                | Architecture    | Library                 | Info | Compiler Version        | Compilation Options
+-------------------------------------------------------------------------------------------------------------------------
+gray_bin_selfcheck_tb | tb_architecture | gray_bin_conditional_dc |      | 10.5a.12.6914 (Windows) | -dbg -2008
+gray_bin              | structure       | gray_bin_conditional_dc |      | 10.5a.12.6914 (Windows) | -dbg -2008
+-------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------
+VHDL Package                            | Library                 | Info | Compiler Version        | Compilation Options
+-------------------------------------------------------------------------------------------------------------------------
+standard                                | std                     |      |                         | <unavailable>
+TEXTIO                                  | std                     |      |                         | <unavailable>
+std_logic_1164                          | ieee                    |      |                         | <unavailable>
+NUMERIC_STD                             | ieee                    |      |                         | <unavailable>
+j2svlib                                 | j2svlib                 |      |                         | <unavailable>
+-------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------
+Library                                 | Comment
+-------------------------------------------------------------------------------------------------------------------------
+gray_bin_conditional_dc                 | None
+ieee                                    | Standard IEEE packages library
+j2svlib                                 | Lattice ispLEVER Classic 2.0, J2SVLIB VHDL library
+std                                     | Standard VHDL library
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+gray_bin_selfcheck_tb gray_bin_selfcheck_tb tb_architecture
+
+
+The performance of simulation is reduced. Version EDU Edition

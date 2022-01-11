@@ -1,0 +1,21 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+task1=1
+Built-in symbols=0
+gray_bin_csop.=0
+gray_bin_csop=0
+[COMPILESTATUS|\\Mac\Home\Desktop\ESE382\Lab3\gray_to_binary\gray_bin_csop\src\gray_bin.vhd]
+FileTimeLow=30795487
+Status=Modified
+[COMPILESTATUS|\\Mac\Home\Desktop\ESE382\Lab3\gray_to_binary\gray_bin_csop\src\gray_bin_TB(1).vhd]
+FileTimeLow=30795488
+Status=Error
+[CACHEDOC|Aldec.Project.Generic.7|\\Mac\Home\Desktop\ESE382\Lab3\gray_to_binary\gray_bin_csop\gray_bin_csop.adf|]
+Path=
+[CACHEDOC|Aldec.Hde.HdePlugIn.7|\\Mac\Home\Desktop\ESE382\csop.vhd|]
+CurrentLine=0
+CurrentColumn=0
+Bookmarks=-1
+BookmarksLength=3
+CurrentZoomFactor=1.000000
+Frame=0
+WindowWorkspaceInfo="LAAAAAAAAAADAAAA/////////////////////yUBAAB6AAAAoAUAAJYCAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA="

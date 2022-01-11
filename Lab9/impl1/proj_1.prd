@@ -1,0 +1,13 @@
+#--  Synopsys, Inc.
+#--  Version N-2018.03L-SP1-1
+#--  Project file \\Mac\Home\Desktop\ESE382\lab9\impl1\proj_1.prd
+#--  Written on Mon May 11 15:20:36 2020
+
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

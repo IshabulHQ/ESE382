@@ -1,0 +1,54 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=gray_bin_table_lookup_dc
+
+[Library]
+gray_bin_table_lookup_dc=.\gray_bin_table_lookup_dc\gray_bin_table_lookup_dc.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=C:\My_Designs\ESE382\Lab 4\gray_to_binary_2\gray_bin_selected\src
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[SpecTracer]
+WindowVisible=0
+
+[$LibMap$]
+gray_bin_table_lookup_dc=.
+Active_lib=
+
+[Files]
+/gray_bin.vhd=-1
+/gray_bin_conditional_dc.vhd=-1
+
+[Files.Data]
+.\src\gray_bin.vhd=VHDL Source Code
+.\src\gray_bin_conditional_dc.vhd=VHDL Source Code
+
+[HierarchyViewer]
+HierarchyInformation= 
+ShowHide=ShowTopLevel
+Selected=

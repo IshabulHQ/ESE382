@@ -1,0 +1,7 @@
+C:\Synopsys\fpga_O-2018.09-SP1\bin64\syn_nfilter.exe  -link  -multisrs  "F:\Spring 2020\ESE382\Lab 4\New Lab 4\Synplify\rev_1\synwork\proj_1_comp.srs"  -osyn  "F:\Spring 2020\ESE382\Lab 4\New Lab 4\Synplify\rev_1\synwork\proj_1_mult.srs"  -log  "F:\Spring 2020\ESE382\Lab 4\New Lab 4\Synplify\rev_1\synlog\proj_1_multi_srs_gen.srr" 
+relcom:C:\Synopsys\fpga_O-2018.09-SP1\bin64\syn_nfilter.exe -link -multisrs "F:\Spring 2020\ESE382\Lab 4\New Lab 4\Synplify\rev_1\synwork\proj_1_comp.srs" -osyn "F:\Spring 2020\ESE382\Lab 4\New Lab 4\Synplify\rev_1\synwork\proj_1_mult.srs" -log "F:\Spring 2020\ESE382\Lab 4\New Lab 4\Synplify\rev_1\synlog\proj_1_multi_srs_gen.srr"
+rc:0 success:1 runtime:1
+file:..\synwork\proj_1_comp.srs|io:i|time:1582752886|size:1657|exec:0|csum:DD7C47AE78A8881B52B0C5BA7C46DA30
+file:..\synwork\proj_1_mult.srs|io:o|time:1582752888|size:1345|exec:0|csum:
+file:..\synlog\proj_1_multi_srs_gen.srr|io:o|time:1582752888|size:1545|exec:0|csum:
+file:C:\Synopsys\fpga_O-2018.09-SP1\bin64\syn_nfilter.exe|io:i|time:1543382182|size:8805888|exec:1|csum:6D082E1B368B6196E3DD4675C1955F41

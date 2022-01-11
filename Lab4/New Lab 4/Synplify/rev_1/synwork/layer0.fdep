@@ -1,0 +1,27 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-layerid|0|-orig_srs|F:\\Spring 2020\\ESE382\\Lab 4\\New Lab 4\\Synplify\\rev_1\\synwork\\proj_1_comp.srs|-autotop|-prodtype|synplify_pro|-nostructver|-dfltencoding|sequential|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work"
+#CUR:"C:\\Synopsys\\fpga_O-2018.09-SP1\\bin64\\c_vhdl.exe":1543382096
+#CUR:"C:\\Synopsys\\fpga_O-2018.09-SP1\\lib\\vhd\\location.map":1543441296
+#CUR:"C:\\Synopsys\\fpga_O-2018.09-SP1\\lib\\vhd\\std.vhd":1543381638
+#CUR:"C:\\Synopsys\\fpga_O-2018.09-SP1\\lib\\vhd\\snps_haps_pkg.vhd":1543381638
+#CUR:"C:\\Synopsys\\fpga_O-2018.09-SP1\\lib\\vhd\\std1164.vhd":1543381638
+#CUR:"C:\\Synopsys\\fpga_O-2018.09-SP1\\lib\\vhd\\numeric.vhd":1543381638
+#CUR:"C:\\Synopsys\\fpga_O-2018.09-SP1\\lib\\vhd\\umr_capim.vhd":1543381638
+#CUR:"C:\\Synopsys\\fpga_O-2018.09-SP1\\lib\\vhd\\arith.vhd":1543381638
+#CUR:"C:\\Synopsys\\fpga_O-2018.09-SP1\\lib\\vhd\\unsigned.vhd":1543381638
+#CUR:"C:\\Synopsys\\fpga_O-2018.09-SP1\\lib\\vhd\\hyperents.vhd":1543381638
+#CUR:"F:\\Spring 2020\\ESE382\\Lab 4\\New Lab 4\\gray_to_binary_2\\gray_bin_conditional_dc\\src\\gray_bin_conditional_dc.vhd":1582752800
+0 "F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_conditional_dc\src\gray_bin_conditional_dc.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+
+# Dependency Lists (Users Of)
+0 -1
+
+# Design Unit to File Association
+arch work gray_bin conditional_dc 0
+module work gray_bin 0
+
+
+# Configuration files used

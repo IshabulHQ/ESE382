@@ -1,0 +1,6 @@
+19
+~E 1 "./../src/conditional.vhd" 6 converter_bcd_2421
+~E 1 "./../src/gray_bin_conditional_dc.vhd" 35 gray_bin
+~A 1 "./../src/gray_bin_conditional_dc.vhd" 50 conditional_dc
+~E 1 "./../src/gray_bin_selfcheck_TB(3).vhd" 8 gray_bin_selfcheck_tb
+~A 1 "./../src/gray_bin_selfcheck_TB(3).vhd" 11 tb_architecture

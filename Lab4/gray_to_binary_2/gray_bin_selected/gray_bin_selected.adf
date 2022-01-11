@@ -1,0 +1,53 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=gray_bin_selected
+
+[Library]
+gray_bin_selected=.\gray_bin_selected\gray_bin_selected.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=C:\My_Designs\ESE382
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+gray_bin_selected=.
+Active_lib=
+
+[Files]
+/gray_bin_conditional_dc.vhd=-1
+/gray_bin_selfcheck_TB(3).vhd=-1
+
+[Files.Data]
+.\src\gray_bin_conditional_dc.vhd=VHDL Source Code
+.\src\gray_bin_selfcheck_TB(3).vhd=VHDL Source Code
+
+[HierarchyViewer]
+HierarchyInformation= 
+ShowHide=ShowTopLevel
+Selected=
+[SpecTracer]
+WindowVisible=0

@@ -1,0 +1,20 @@
+
+fsm_encoding {9393391} sequential
+
+fsm_state_encoding {9393391} state_a {00}
+
+fsm_state_encoding {9393391} state_b {01}
+
+fsm_state_encoding {9393391} state_c {10}
+
+fsm_registers {9393391} {present_state[1]}  {present_state[0]} 
+
+fsm_encoding {10642642} sequential
+
+fsm_state_encoding {10642642} idle {00}
+
+fsm_state_encoding {10642642} ph1 {01}
+
+fsm_state_encoding {10642642} ph2 {10}
+
+fsm_registers {10642642} {present_state[1]}  {present_state[0]} 

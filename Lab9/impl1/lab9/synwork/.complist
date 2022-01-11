@@ -1,0 +1,2 @@
+
+: 0 work.SPI_test_system_II "C:\My_Designs\lab09\lab09\src\SPI_test_system_II.vhd" 31 7 work.spi_rx_shifter work.spi_tx_shifter work.send_pos_edge_det 

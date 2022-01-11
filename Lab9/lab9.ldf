@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="lab9" device="LFXP3C-4T100C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="SPI_test_system_I"/>
+        <Source name="C:/My_Designs/Lab 8/lab8/task1/src/send_pos_edge_det.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="C:/My_Designs/Lab 8/lab8/task1/src/SPI_test_system_I.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="SPI_test_system_I"/>
+        </Source>
+        <Source name="C:/My_Designs/Lab 8/lab8/task1/src/spi_tx_shifter.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="lab9.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="lab91.sty"/>
+</BaliProject>

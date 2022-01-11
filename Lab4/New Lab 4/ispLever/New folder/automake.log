@@ -1,0 +1,210 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: VHDL Post-Route Simulation Model
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\edif2blf.exe -edf "proj_1.edf" -out "gray_bin.bl0" -err automake.err -log "proj_1.log" -prj untitled -lib "C:\ispLEVER_Classic2_0\ispcpld/dat/mach.edn" @"proj_1.esp" -nbx -cvt YES'
+
+Starting EDIF2BLIF....
+readEDIF ended normally.
+
+Inspect circuit gray_bin
+    Number of input ports   : 1
+    Number of output ports  : 1
+    Number of bidir ports   : 0
+    Number of instances     : 16
+    Number of nets          : 20
+
+No design errors found in circuit gray_bin
+
+WriteBLIF ended normally.
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\blif2eqn.exe gray_bin.bl0 -o gray_bin.btp -template "C:\ispLEVER_Classic2_0\ispcpld/pld/j2mod.tft" -testfix -bus rebuild -prj untitled -err automake.err'
+
+BLIF2EQN  Open-ABEL Report Generator
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\iblifopt.exe "gray_bin.bl0" -red bypin choose -collapse -pterms 8 -family -err automake.err -gui'
+
+BLIFOPT  Open-ABEL Optimizer 
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor Corp.
+Reading Open-ABEL 2 file gray_bin.bl0...
+Node N_12 has been collapsed.
+Node g_c_i_3__n has been collapsed.
+Node g_c_2__n has been collapsed.
+Node g_c_1__n has been collapsed.
+Node g_c_0__n has been collapsed.
+Node N_13_i has been collapsed.
+Node N_6_i has been collapsed.
+Node N_13_i_i has been collapsed.
+Node g_c_3__n has been collapsed.
+Node N_12_0 has been collapsed.
+Performing 'bypin choose' optimization...
+Writing Open-ABEL 2 (BLIF) file gray_bin.bl1...
+
+BLIFOPT complete - 0 errors, 0 warnings. Time: 1 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\iblflink.exe "gray_bin.bl1" -o "untitled.bl2" -omod gray_bin -family -err automake.err -gui'
+
+BLIFLINK  Top-Down Design Linker
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+
+Top-level file: 'gray_bin.bl1'
+
+Hierarchical BLIF: 'untitled.bl2'
+
+BLIFLINK complete.  Time: 1 second 
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\iblifopt.exe untitled.bl2 -red bypin choose -sweep -collapse all -pterms 8 -err automake.err -gui'
+
+BLIFOPT  Open-ABEL Optimizer 
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor Corp.
+Reading Open-ABEL 2 file untitled.bl2...
+Performing 'bypin choose' optimization...
+Writing Open-ABEL 2 (BLIF) file untitled.bl3...
+
+BLIFOPT complete - 0 errors, 0 warnings. Time: 1 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\idiofft.exe untitled.bl3 -pla -o untitled.tt2 -dev p22v10gc -define N -err automake.err -gui'
+
+DIOFFT  Flip-Flop Transformation program
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Input file: untitled.bl3.
+Output file: untitled.tt2.
+Cross reference file: untitled.xrf.
+
+Shortening signal names...
+Writing signal name cross reference file untitled.xrf... 
+
+DIOFFT complete. - Time 0 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\fit.exe untitled.tt2 -dev p22v10gc -str -err automake.err -gui'
+
+FIT  Generic Device Fitter
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Input file: 'untitled.tt2'
+Device 'p22v10gc'
+Design FITS
+Pin-assigned pla: 'untitled.tt3'
+
+FIT complete.  Time: 1 second.
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\fuseasm.exe untitled.tt3 -dev p22v10gc -o untitled.jed -ivec NoInput.tmv -rep untitled.rpt -doc brief -con ptblown -for brief -err automake.err -gui'
+
+FUSEASM  Fusemap Assembler
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Note 5144: Could not open vector file NoInput.tmv
+
+Input file: 'untitled.tt3'
+Device: 'P22V10GC'
+Building model...
+Choosing best polarities...
+Mapping equations...
+.
+15 of 132 terms used; 0 vectors loaded
+Programmer load file: 'untitled.jed'
+Generating report...
+Report file: 'untitled.rpt'
+
+FUSEASM complete.  Time: 1 second 
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\timsel.exe @untitled.psl'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\chipsim.exe "untitled._sp" "untitled.vtd" none'
+
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\chipsim.exe "untitled._sp" "untitled.vatd" none'
+
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\j2svhdl.exe untitled.jed -dly custom untitled.tim max -pldbus default gray_bin.btp -o untitled.vhq -module gray_bin -suppress -err automake.err -gui'
+
+JED2VHDL  JEDEC to IEEE1076 VHDL Model Builder
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+
+JEDEC file: 'untitled.jed'
+Device: 'P22V10GC'
+Module Name: gray_bin
+Reading JEDEC Input File
+Extracting PLD Circuit Model
+BUS template file: 'gray_bin.btp' 
+
+-- Reconstructing bus signal name as read from bus template file. 
+It may take a moment... 
+
+
+*** Signal Name Conversion ***
+PIN 2 -- signal: 'g_3_' is converted to: 'g(3)'. 
+PIN 3 -- signal: 'g_2_' is converted to: 'g(2)'. 
+PIN 4 -- signal: 'g_1_' is converted to: 'g(1)'. 
+PIN 5 -- signal: 'g_0_' is converted to: 'g(0)'. 
+PIN 23 -- signal: 'b_0_' is converted to: 'b(0)'. 
+PIN 24 -- signal: 'b_1_' is converted to: 'b(1)'. 
+PIN 25 -- signal: 'b_2_' is converted to: 'b(2)'. 
+PIN 26 -- signal: 'b_3_' is converted to: 'b(3)'. 
+.
+Input file: untitled.tim
+Local timing delay file: 'untitled.tim' 
+Delay Model Selected :MAX
+Total FF type(s) used= 1
+VHDL pldmodel file    : 'untitled.vhq'
+
+JED2VHDL complete. Time: 1 second 
+Done: completed successfully.

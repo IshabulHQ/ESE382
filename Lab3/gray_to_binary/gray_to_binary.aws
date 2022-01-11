@@ -1,0 +1,14 @@
+[Version]
+Version=10.5
+[Designs]
+gray_bin_csop=\\Mac\Home\Desktop\ESE382\Lab3\gray_to_binary\gray_bin_csop\gray_bin_csop.adf
+[Browser]
+sort=order
+mode=desc
+[Order]
+order=1
+macro=
+[Expand]
+gray_bin_csop=1
+[Settings]
+Active=gray_bin_csop

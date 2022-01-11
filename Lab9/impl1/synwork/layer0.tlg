@@ -1,0 +1,30 @@
+@N: CD630 :"C:\My_Designs\Lab 8\lab8\task1\src\SPI_test_system_I.vhd":21:7:21:23|Synthesizing work.spi_test_system_i.structural.
+@N: CD630 :"C:\My_Designs\Lab 8\lab8\task1\src\spi_tx_shifter.vhd":35:7:35:20|Synthesizing work.spi_tx_shifter.fsm.
+@N: CD233 :"C:\My_Designs\Lab 8\lab8\task1\src\spi_tx_shifter.vhd":53:11:53:12|Using sequential encoding for type state.
+@W: CG296 :"C:\My_Designs\Lab 8\lab8\task1\src\spi_tx_shifter.vhd":103:9:103:15|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\My_Designs\Lab 8\lab8\task1\src\spi_tx_shifter.vhd":108:10:108:13|Referenced variable cpol is not in sensitivity list.
+Post processing for work.spi_tx_shifter.fsm
+Running optimization stage 1 on spi_tx_shifter .......
+@W: CL113 :"C:\My_Designs\Lab 8\lab8\task1\src\spi_tx_shifter.vhd":126:2:126:3|Feedback mux created for signal bit_addr[2:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@N: CD630 :"C:\My_Designs\Lab 8\lab8\task1\src\send_pos_edge_det.vhd":22:7:22:23|Synthesizing work.send_pos_edge_det.moore_fsm.
+@N: CD233 :"C:\My_Designs\Lab 8\lab8\task1\src\send_pos_edge_det.vhd":33:12:33:13|Using sequential encoding for type state.
+Post processing for work.send_pos_edge_det.moore_fsm
+Running optimization stage 1 on send_pos_edge_det .......
+Post processing for work.spi_test_system_i.structural
+Running optimization stage 1 on SPI_test_system_I .......
+Running optimization stage 2 on send_pos_edge_det .......
+@N: CL201 :"C:\My_Designs\Lab 8\lab8\task1\src\send_pos_edge_det.vhd":39:3:39:4|Trying to extract state machine for register present_state.
+Extracted state machine for register present_state
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+Running optimization stage 2 on spi_tx_shifter .......
+@N: CL201 :"C:\My_Designs\Lab 8\lab8\task1\src\spi_tx_shifter.vhd":64:2:64:3|Trying to extract state machine for register present_state.
+Extracted state machine for register present_state
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@N: CL159 :"C:\My_Designs\Lab 8\lab8\task1\src\spi_tx_shifter.vhd":40:1:40:4|Input cpha is unused.
+Running optimization stage 2 on SPI_test_system_I .......

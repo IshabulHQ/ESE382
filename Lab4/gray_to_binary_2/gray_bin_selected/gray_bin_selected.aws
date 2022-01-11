@@ -1,0 +1,8 @@
+[Version]
+Version=10.5
+[Designs]
+gray_bin_selected=gray_bin_selected.adf
+[Settings]
+Active=gray_bin_selected
+[Expand]
+gray_bin_selected=1

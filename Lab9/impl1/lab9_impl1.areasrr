@@ -1,0 +1,50 @@
+----------------------------------------------------------------------
+Report for cell SPI_test_system_I.structural
+
+Register bits: 7 of 3072 (0%)
+PIC Latch:       0
+I/O cells:       15
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3BX        3       100.0
+                            FD1S3DX        4       100.0
+                                GSR        1       100.0
+                                 IB       12       100.0
+                                INV        1       100.0
+                            L6MUX21        1       100.0
+                                 OB        3       100.0
+                           ORCALUT4       15       100.0
+                              PFUMX        2       100.0
+                                PUR        1       100.0
+                                VHI        3       100.0
+                                VLO        3       100.0
+SUB MODULES 
+                  send_pos_edge_det        1       100.0
+                     spi_tx_shifter        1       100.0
+                            
+                         TOTAL            51           
+----------------------------------------------------------------------
+Report for cell spi_tx_shifter.netlist
+     Instance path:  u1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3BX        3       100.0
+                            FD1S3DX        2        50.0
+                            L6MUX21        1       100.0
+                           ORCALUT4       13        86.7
+                              PFUMX        2       100.0
+                                VHI        1        33.3
+                                VLO        1        33.3
+                            
+                         TOTAL            23           
+----------------------------------------------------------------------
+Report for cell send_pos_edge_det.netlist
+     Instance path:  u0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3DX        2        50.0
+                           ORCALUT4        2        13.3
+                                VHI        1        33.3
+                                VLO        1        33.3
+                            
+                         TOTAL             6           

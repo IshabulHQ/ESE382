@@ -1,0 +1,96 @@
+# Design: Design gray_bin already active.
+# 
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+acom -reorder -dbg -e 100 -work gray_bin -2008  $dsn/src/gray_bin_selected.vhd
+# File: F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin\src\gray_bin_selected.vhd
+# Compile Entity "gray_bin"
+# Compile Architecture "selected" of Entity "gray_bin"
+# Top-level unit(s) detected:
+# Entity => gray_bin
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -reorder -dbg -e 100 -work gray_bin -2008  $dsn/src/gray_bin_selected.vhd $dsn/src/gray_bin_selfcheck_TB(3).vhd
+# File: F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin\src\gray_bin_selected.vhd
+# Compile Entity "gray_bin"
+# Compile Architecture "selected" of Entity "gray_bin"
+# File: F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin\src\gray_bin_selfcheck_TB(3).vhd
+# Compile Entity "gray_bin_selfcheck_tb"
+# Compile Architecture "tb_architecture" of Entity "gray_bin_selfcheck_tb"
+# Top-level unit(s) detected:
+# Entity => gray_bin_selfcheck_tb
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+asim -O5 +access +r +m+gray_bin gray_bin selected
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7075 kB (elbread=1280 elab2=5656 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin\src\wave.asdb
+#  2:54 PM, Wednesday, February 26, 2020
+#  Simulation has been initialized
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+gray_bin_selfcheck_tb gray_bin_selfcheck_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7098 kB (elbread=1280 elab2=5679 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin\src\wave.asdb
+#  2:54 PM, Wednesday, February 26, 2020
+#  Simulation has been initialized
+# add wave -noreg {/gray_bin_selfcheck_tb/g3}
+# add wave -noreg {/gray_bin_selfcheck_tb/g2}
+# add wave -noreg {/gray_bin_selfcheck_tb/g1}
+# add wave -noreg {/gray_bin_selfcheck_tb/g0}
+# add wave -noreg {/gray_bin_selfcheck_tb/b3}
+# add wave -noreg {/gray_bin_selfcheck_tb/b2}
+# add wave -noreg {/gray_bin_selfcheck_tb/b1}
+# add wave -noreg {/gray_bin_selfcheck_tb/b0}
+# 8 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/Spring 2020/ESE382/Lab 4/New Lab 4/gray_to_binary_2/gray_bin/src/wave.asdb'.
+run 320 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# Waveform file 'F:/Spring 2020/ESE382/Lab 4/New Lab 4/gray_to_binary_2/gray_bin/src/task1.awc' connected to 'F:/Spring 2020/ESE382/Lab 4/New Lab 4/gray_to_binary_2/gray_bin/src/task1.asdb'.
+# WAVEFORM: 4 signal(s) inserted to virtual bus 'VBus0'.
+# WAVEFORM: 4 signal(s) inserted to virtual bus 'VBus1'.
+# Adding file F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin\src\task1.asdb ... Done
+# Adding file F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin\src\task1.awc ... Done
+# Design: 3:00 PM, Wednesday, February 26, 2020
+# Design: Opening design "F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_selected_dc\gray_bin_selected_dc.adf"
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Design: Design "gray_bin_selected_dc" has been set as active.

@@ -1,0 +1,36 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Wed Feb 26 16:36:15 2020
+#$ MODULE gray_bin
+#$ PINS 8 g_3_:3'ke'  b_3_:27'ke'  g_2_:4'ke'  g_1_:5'ke'  g_0_:6'ke'  b_2_:26'ke'  b_1_:25'ke'  b_0_:24'ke' 
+
+.model gray_bin
+.inputs g_3_.BLIF g_2_.BLIF g_1_.BLIF g_0_.BLIF
+.outputs b_3_ b_2_ b_1_ b_0_
+.names g_3_.BLIF b_3_
+1 1
+0 0
+.names g_3_.BLIF g_2_.BLIF b_2_
+01 1
+1- 0
+-0 0
+.names g_3_.BLIF g_2_.BLIF g_1_.BLIF b_1_
+010 1
+-01 1
+1-1 1
+011 0
+-00 0
+1-0 0
+.names g_3_.BLIF g_2_.BLIF g_1_.BLIF g_0_.BLIF b_0_
+0100 1
+0111 1
+-010 1
+1-10 1
+-001 1
+1-01 1
+0110 0
+0101 0
+-000 0
+1-00 0
+-011 0
+1-11 0
+.end

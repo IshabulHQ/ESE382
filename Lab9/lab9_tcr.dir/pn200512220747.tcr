@@ -1,0 +1,7 @@
+#Start recording tcl command: 5/11/2020 12:55:18
+#Project Location: //Mac/Home/Desktop/ESE382/lab9; Project name: lab9
+prj_project new -name "lab9" -impl "impl1" -dev LFXP3C-4T100C -synthesis "synplify"
+prj_src add "C:/My_Designs/Lab 8/lab8/task1/src/send_pos_edge_det.vhd" "C:/My_Designs/Lab 8/lab8/task1/src/SPI_test_system_I.vhd" "C:/My_Designs/Lab 8/lab8/task1/src/spi_tx_shifter.vhd"
+prj_project save
+launch_synplify_prj impl1
+#Stop recording: 5/12/2020 22:07:47

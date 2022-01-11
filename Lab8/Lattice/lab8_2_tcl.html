@@ -1,0 +1,78 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn200428175131"></A><B><U><big>pn200428175131</big></U></B>
+#Start recording tcl command: 4/28/2020 17:38:07
+#Project Location: //Mac/Home/Desktop/ESE382/Lab 8/Lattice; Project name: lab8_2
+prj_project new -name "lab8_2" -impl "impl1" -dev LFXP3C-4T100C -synthesis "synplify"
+prj_src add "C:/My_Designs/Lab 8/lab8/task1/src/task3_tb.vhd" "C:/My_Designs/Lab 8/lab8/task1/src/send_pos_edge_det.vhd" "C:/My_Designs/Lab 8/lab8/task1/src/SPI_test_system_I.vhd" "C:/My_Designs/Lab 8/lab8/task1/src/spi_tx_shifter.vhd"
+prj_project save
+source "//Mac/Home/Desktop/ESE382/Lab 8/Lattice/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "SPI_test_system_I_tb.vhd"
+source "//Mac/Home/Desktop/ESE382/Lab 8/Lattice/hdle_generate_Symbol.tcl"
+launch_synplify_prj impl1
+launch_synplify_prj impl1
+prj_project save
+prj_project close
+#Stop recording: 4/28/2020 17:51:31
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

@@ -1,0 +1,87 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=gray_bin_conditional_dc
+
+[Library]
+gray_bin_conditional_dc=.\gray_bin_conditional_dc\gray_bin_conditional_dc.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FLOWTOOLS=NONE
+REFRESH_FLOW=1
+FAMILY=
+fileopenfolder=F:\Spring 2020\ESE382\Lab 4\New Lab 4\ispLever\New folder
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=1
+
+[$LibMap$]
+gray_bin_conditional_dc=.
+Active_lib=
+
+[Folders]
+Name3=Makefiles
+Directory3=F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_conditional_dc\
+Extension3=mak
+Name4=Memory
+Directory4=F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_conditional_dc\
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_conditional_dc\
+Extension5=dll
+Name6=PDF
+Directory6=F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_conditional_dc\
+Extension6=pdf
+Name7=HTML
+Directory7=F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_conditional_dc\
+Extension7=htm;html
+Name8=ALINT-PRO Workspaces
+Directory8=F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin_conditional_dc\
+Extension8=alintws
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=gray_bin|conditional_dc|0 gray_bin_selfcheck_tb|tb_architecture|0 
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/task2.asdb=-1
+/task2.awc=-1
+/gray_bin_selfcheck_TB(3).vhd=-1
+/task3.asdb=-1
+/task3.awc=-1
+/untitled.vhq=-1
+/untitled.asdb=-1
+/untitled.awc=-1
+
+[Files.Data]
+.\src\task2.asdb=Accelerated Waveform File
+.\src\task2.awc=Accelerated Waveform Configuration
+.\src\gray_bin_selfcheck_TB(3).vhd=VHDL Source Code
+.\src\task3.asdb=Accelerated Waveform File
+.\src\task3.awc=Accelerated Waveform Configuration
+.\src\untitled.vhq=VHDL Source Code
+
+.\src\untitled.asdb=Accelerated Waveform File
+.\src\untitled.awc=Accelerated Waveform Configuration

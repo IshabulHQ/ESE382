@@ -1,0 +1,72 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=gray_bin
+
+[Library]
+gray_bin=.\gray_bin\gray_bin.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin\src
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=1
+
+[$LibMap$]
+gray_bin=.
+Active_lib=
+
+[Files]
+/gray_bin_selected.vhd=-1
+/gray_bin_selfcheck_TB(3).vhd=-1
+/task1.asdb=-1
+/task1.awc=-1
+
+[Files.Data]
+.\src\gray_bin_selected.vhd=VHDL Source Code
+.\src\gray_bin_selfcheck_TB(3).vhd=VHDL Source Code
+
+.\src\task1.asdb=Accelerated Waveform File
+.\src\task1.awc=Accelerated Waveform Configuration
+[Folders]
+Name3=Makefiles
+Directory3=F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin\
+Extension3=mak
+Name4=Memory
+Directory4=F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin\
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin\
+Extension5=dll
+Name6=PDF
+Directory6=F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin\
+Extension6=pdf
+Name7=HTML
+Directory7=F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin\
+Extension7=htm;html
+Name8=ALINT-PRO Workspaces
+Directory8=F:\Spring 2020\ESE382\Lab 4\New Lab 4\gray_to_binary_2\gray_bin\
+Extension8=alintws
+[SpecTracer]
+WindowVisible=0

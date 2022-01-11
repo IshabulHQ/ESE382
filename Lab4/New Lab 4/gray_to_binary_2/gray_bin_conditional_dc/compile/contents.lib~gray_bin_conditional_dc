@@ -1,0 +1,17 @@
+14
+~E 1 "../src/proj_1.vhm" 20 AND2
+~A 1 "../src/proj_1.vhm" 27 beh
+~E 1 "../src/untitled.vhq" 33 gray_bin
+~A 1 "../src/proj_1.vhm" 138 beh
+~A 1 "../src/gray_bin_conditional_dc.vhd" 42 conditional_dc
+~A 1 "../src/untitled.vhq" 94 structure
+~E 1 "../src/gray_bin_selfcheck_TB(3).vhd" 8 gray_bin_selfcheck_tb
+~A 1 "../src/gray_bin_selfcheck_TB(3).vhd" 11 tb_architecture
+~E 1 "../src/proj_1.vhm" 43 IBUF
+~A 1 "../src/proj_1.vhm" 49 beh
+~E 1 "../src/proj_1.vhm" 65 INV
+~A 1 "../src/proj_1.vhm" 71 beh
+~E 1 "../src/proj_1.vhm" 87 OBUF
+~A 1 "../src/proj_1.vhm" 93 beh
+~E 1 "../src/proj_1.vhm" 109 XOR2
+~A 1 "../src/proj_1.vhm" 116 beh

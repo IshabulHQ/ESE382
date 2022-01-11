@@ -1,0 +1,41 @@
+# Wed Feb 26 16:34:48 2020
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09-SP1
+Install: C:\Synopsys\fpga_O-2018.09-SP1
+OS: Windows 6.2
+
+Hostname: BXX228
+
+Implementation : rev_1
+Synopsys CPLD Technology Mapper, Version maprc, Build 4745R, Built Nov 27 2018 21:17:21
+
+@N: MF248 |Running in 64-bit mode.
+@A: MF827 |No constraint file specified.
+@N: MO106 :"f:\spring 2020\ese382\lab 4\new lab 4\gray_to_binary_2\gray_bin_conditional_dc\src\gray_bin_conditional_dc.vhd":45:4:45:5|Found ROM b_1[3:0] (in view: work.gray_bin(conditional_dc)) with 12 words by 4 bits.
+---------------------------------------
+Resource Usage Report
+
+Simple gate primitives:
+IBUF            4 uses
+OBUF            4 uses
+AND2            1 use
+XOR2            2 uses
+INV             3 uses
+
+
+@N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 16MB peak: 103MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Feb 26 16:34:48 2020
+
+###########################################################]

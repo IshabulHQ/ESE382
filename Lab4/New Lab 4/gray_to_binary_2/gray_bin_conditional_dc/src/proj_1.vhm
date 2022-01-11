@@ -1,0 +1,224 @@
+--
+-- Written by Synopsys
+-- Product Version "O-2018.09-SP1"
+-- Program "Synplify Pro", Mapper "maprc, Build 4745R"
+-- Wed Feb 26 16:34:48 2020
+--
+
+--
+-- Written by Synplify Pro version Build 4745R
+-- Wed Feb 26 16:34:48 2020
+--
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity AND2 is
+port(
+  O :  out std_logic;
+  I0 :  in std_logic;
+  I1 :  in std_logic);
+end AND2;
+
+architecture beh of AND2 is
+  signal VCC : std_logic ;
+  signal GND : std_logic ;
+begin
+VCC <= '1';
+GND <= '0';
+O <= I0 and I1  after 100 ps;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity IBUF is
+port(
+O :  out std_logic;
+I0 :  in std_logic);
+end IBUF;
+
+architecture beh of IBUF is
+signal VCC : std_logic ;
+signal GND : std_logic ;
+begin
+O <= I0;
+VCC <= '1';
+GND <= '0';
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity INV is
+port(
+O :  out std_logic;
+I0 :  in std_logic);
+end INV;
+
+architecture beh of INV is
+signal VCC : std_logic ;
+signal GND : std_logic ;
+begin
+O <= not I0;
+VCC <= '1';
+GND <= '0';
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity OBUF is
+port(
+O :  out std_logic;
+I0 :  in std_logic);
+end OBUF;
+
+architecture beh of OBUF is
+signal VCC : std_logic ;
+signal GND : std_logic ;
+begin
+O <= I0;
+VCC <= '1';
+GND <= '0';
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity XOR2 is
+port(
+O :  out std_logic;
+I0 :  in std_logic;
+I1 :  in std_logic);
+end XOR2;
+
+architecture beh of XOR2 is
+signal VCC : std_logic ;
+signal GND : std_logic ;
+begin
+VCC <= '1';
+GND <= '0';
+O <= I0 xor I1  after 100 ps;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity gray_bin is
+port(
+g : in std_logic_vector(3 downto 0);
+b : out std_logic_vector(3 downto 0));
+end gray_bin;
+
+architecture beh of gray_bin is
+signal G_C : std_logic_vector(3 downto 0);
+signal G_C_I : std_logic_vector(3 to 3);
+signal N_12 : std_logic ;
+signal N_13_I : std_logic ;
+signal N_6_I : std_logic ;
+signal N_13_I_I : std_logic ;
+signal N_12_0 : std_logic ;
+signal GND : std_logic ;
+signal VCC : std_logic ;
+component IBUF
+port(
+O :  out std_logic;
+I0 :  in std_logic  );
+end component;
+component OBUF
+port(
+O :  out std_logic;
+I0 :  in std_logic  );
+end component;
+component AND2
+port(
+O :  out std_logic;
+I0 :  in std_logic;
+I1 :  in std_logic  );
+end component;
+component XOR2
+port(
+O :  out std_logic;
+I0 :  in std_logic;
+I1 :  in std_logic  );
+end component;
+component INV
+port(
+O :  out std_logic;
+I0 :  in std_logic  );
+end component;
+begin
+\G[0]_Z24\: IBUF port map (
+O => G_C(0),
+I0 => g(0));
+\G[1]_Z25\: IBUF port map (
+O => G_C(1),
+I0 => g(1));
+\G[2]_Z26\: IBUF port map (
+O => G_C(2),
+I0 => g(2));
+\G[3]_Z27\: IBUF port map (
+O => G_C(3),
+I0 => g(3));
+\B[0]_Z28\: OBUF port map (
+O => b(0),
+I0 => N_6_I);
+\B[1]_Z29\: OBUF port map (
+O => b(1),
+I0 => N_13_I_I);
+\B[2]_Z30\: OBUF port map (
+O => b(2),
+I0 => N_12_0);
+\B[3]_Z31\: OBUF port map (
+O => b(3),
+I0 => G_C(3));
+\B_1_0_O2[2]\: AND2 port map (
+O => N_12_0,
+I0 => G_C(2),
+I1 => G_C_I(3));
+\B_1_I_X2[0]\: XOR2 port map (
+O => N_13_I,
+I0 => N_12,
+I1 => G_C(1));
+M1: XOR2 port map (
+O => N_6_I,
+I0 => N_13_I_I,
+I1 => G_C(0));
+N_13_I_I_Z35: INV port map (
+O => N_13_I_I,
+I0 => N_13_I);
+\G_C_I[3]_Z36\: INV port map (
+O => G_C_I(3),
+I0 => G_C(3));
+\B_1_0_O2_I[2]\: INV port map (
+O => N_12,
+I0 => N_12_0);
+GND <= '0';
+VCC <= '1';
+end beh;
+

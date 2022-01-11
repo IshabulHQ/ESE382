@@ -1,0 +1,10 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: F:\Spring 2020\ESE382\Lab 4\gray_bin_table_lookup_dc\src\gray_bin.vhd" 
+MESSAGE "Compile Entity "gray_bin"" 
+MESSAGE "Compile Architecture "table_lookup_dc" of Entity "gray_bin"" 
+ERROR COMP96_0127: "Improper aggregate length. Expected length is 10." "F:\Spring 2020\ESE382\Lab 4\gray_bin_table_lookup_dc\src\gray_bin.vhd" 50 2
+ERROR COMP96_0079: "Invalid aggregate." "F:\Spring 2020\ESE382\Lab 4\gray_bin_table_lookup_dc\src\gray_bin.vhd" 50 2
+ERROR COMP96_0077: "Undefined type of expression. Expected type 'lookup_table'." "F:\Spring 2020\ESE382\Lab 4\gray_bin_table_lookup_dc\src\gray_bin.vhd" 50 2
+ERROR COMP96_0305: "Cannot find function "to_integer" for these actuals." "F:\Spring 2020\ESE382\Lab 4\gray_bin_table_lookup_dc\src\gray_bin.vhd" 56 13
+ERROR COMP96_0138: "The index types in the reference to the array object are incompatible with its range type." "F:\Spring 2020\ESE382\Lab 4\gray_bin_table_lookup_dc\src\gray_bin.vhd" 56 13
+FAILURE "Compile failure 5 Errors 0 Warnings  Analysis time :  78.0 [ms]" 

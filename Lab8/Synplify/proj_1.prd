@@ -1,0 +1,13 @@
+#--  Synopsys, Inc.
+#--  Version N-2018.03L-SP1-1
+#--  Project file \\Mac\Home\Desktop\ESE382\Lab 8\Synplify\proj_1.prd
+#--  Written on Tue Apr 28 17:45:34 2020
+
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

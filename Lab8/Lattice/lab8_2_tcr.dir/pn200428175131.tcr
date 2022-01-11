@@ -1,0 +1,13 @@
+#Start recording tcl command: 4/28/2020 17:38:07
+#Project Location: //Mac/Home/Desktop/ESE382/Lab 8/Lattice; Project name: lab8_2
+prj_project new -name "lab8_2" -impl "impl1" -dev LFXP3C-4T100C -synthesis "synplify"
+prj_src add "C:/My_Designs/Lab 8/lab8/task1/src/task3_tb.vhd" "C:/My_Designs/Lab 8/lab8/task1/src/send_pos_edge_det.vhd" "C:/My_Designs/Lab 8/lab8/task1/src/SPI_test_system_I.vhd" "C:/My_Designs/Lab 8/lab8/task1/src/spi_tx_shifter.vhd"
+prj_project save
+source "//Mac/Home/Desktop/ESE382/Lab 8/Lattice/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "SPI_test_system_I_tb.vhd"
+source "//Mac/Home/Desktop/ESE382/Lab 8/Lattice/hdle_generate_Symbol.tcl"
+launch_synplify_prj impl1
+launch_synplify_prj impl1
+prj_project save
+prj_project close
+#Stop recording: 4/28/2020 17:51:31
